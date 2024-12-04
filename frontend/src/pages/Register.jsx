@@ -1,9 +1,10 @@
 import React from "react";
+import Form from "../components/form";
 
 const Register = () => {
   return (
     <div>
-      <h1>register page</h1>
+      <Form route="/api/v1/register/" method="register" />
     </div>
   );
 };
