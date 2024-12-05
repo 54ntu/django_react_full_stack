@@ -12,6 +12,6 @@ urlpatterns = [
 
     #this two urls are for creating,listing and deleting of the notes created by the logged in user
     path("notes/",NoteListCreate.as_view(),name="note-list"),
-    path("notes/delete/<int:id>/",DeleteNote.as_view(),name="delete-note")
+    path("notes/delete/<int:pk>/",DeleteNote.as_view(),name="delete-note")
 
 ]
